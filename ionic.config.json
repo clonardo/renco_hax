@@ -1,0 +1,7 @@
+{
+  "name": "renco_hax",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
