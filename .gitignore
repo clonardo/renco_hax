@@ -1,28 +1,57 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
+# compiled output
+/dist
+/tmp
+/out-tsc
 /build
 
-# misc
+
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.vscode
-.idea
+.env
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# Optional eslint cache
-.eslintcache
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+tmp.txt
+
+# System Files
+.DS_Store
+Thumbs.db
+
+postgres.crt
+dev.postgres.crt
+stg.postgres.crt
+prod.postgres.crt
+
+debug.log

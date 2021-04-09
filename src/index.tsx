@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import { App } from './app';
+import * as serviceWorkerRegistration from './register-service-worker';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import reportWebVitals from './reportWebVitals';
+import { ReactQueryDevtools } from 'react-query/devtools';
+
+defineCustomElements(window);
+// Create a client
+const queryClient = new QueryClient();
 
 ReactDOM.render(
-  <React.StrictMode>
+  <QueryClientProvider client={queryClient}>
     <App />
-  </React.StrictMode>,
+    <ReactQueryDevtools initialIsOpen />
+  </QueryClientProvider>,
   document.getElementById('root')
 );
 

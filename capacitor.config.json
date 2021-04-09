@@ -1,8 +1,8 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "renco_hax",
+  "appId": "com.renco.hax",
+  "appName": "RenCoPilot",
   "bundledWebRuntime": false,
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "webDir": "build",
   "plugins": {
     "SplashScreen": {

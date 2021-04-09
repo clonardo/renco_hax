@@ -33,7 +33,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const App: React.FC = () => (
+export const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonTabs>
@@ -69,5 +69,3 @@ const App: React.FC = () => (
     </IonReactRouter>
   </IonApp>
 );
-
-export default App;
